@@ -8,7 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="" scope="TEST">
+    <orderEntry type="library" exported="" name="junit.jupiter" level="application" />
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/json-simple-1.1.1.jar!/" />
@@ -17,6 +18,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="junit.jupiter" level="application" />
+    <orderEntry type="library" exported="" name="junit.platform.suite.engine" level="project" />
   </component>
 </module>
