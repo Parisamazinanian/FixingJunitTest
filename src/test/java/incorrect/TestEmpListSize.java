@@ -3,16 +3,20 @@ package incorrect;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import main.java.Employee;
 import main.java.EmployeeManager;
 
 class TestEmpListSize {
-
 	EmployeeManager EM = null;
+
+	@BeforeEach
+	void init() {
+		EM = new EmployeeManager();
+		EM.initialize();
+	}
+
 	
 	@Test
 	@DisplayName("Correct initial length of Employee List")

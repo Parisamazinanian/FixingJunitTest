@@ -18,6 +18,7 @@ public class EmployeeManager {
 		EmployeeManager EM = new EmployeeManager();
 		EM.initialize();
 		EM.shuffle();
+		System.out.println(EM.getEmployeeList().size());
 	}
 
 	public void initialize() {
@@ -51,6 +52,8 @@ public class EmployeeManager {
 	public List<Employee> getEmployeeList() {
 		return this.empList;
 	}
+
+
 
 	public void shuffle() {
 		this.empList.sort(new EmployeeComparator());
